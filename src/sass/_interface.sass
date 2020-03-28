@@ -1,8 +1,10 @@
-body 
+*
+	box-sizing: border-box
+body
 	+reg
-img 
+img
 	max-width: 100%
-.container 
+.container
 	width: 1170px
 	margin: auto
 @media (max-width: 1200px)
@@ -16,4 +18,20 @@ img
 	background-color: $main-color
 	border-radius: 10px
 	padding: 18px 30px
-	border: none	
+	border: none
+	+bold
+	&:hover
+		background-color: lighten($main-color, 10%)
+.section
+	padding: 90px 0px
+	&-title
+		font-size: 24px
+		+bold
+	&-subtitle
+		display: block
+		font-size: 16px
+	.input
+		border: 1px $border-input
+		padding: 20px 26px
+		font-size: 15px
+		border-radius: 10px
