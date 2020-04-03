@@ -9,10 +9,10 @@
 		height: 100%
 		position: absolute
 		top: 0px
-		left: 0px 
+		left: 0px
 		background-color: #fff
 	&-block
-		width: 50%  
+		width: 50%
 		padding-right: 90px
 		position: relative
 	&__title
@@ -34,11 +34,20 @@
 		display: flex
 		justify-content: space-between
 		margin-top: 30px
-		height: 41px
 		&__first
-			width: 224px
+			line-height: 24px
+			width: 50%
 		&__second
-			width: 189px
+			margin-left: 60px
+			display: flex
+			flex-direction: column
+			line-height: 24px
+			width: 50%
+		&__number
+			text-decoration: none
+			font-style: none
+			color: $text-color
+			+bold
 @media (max-width: 1200px)
 	.offer
 		background-size: cover
@@ -46,13 +55,23 @@
 			width: 100%
 			margin-bottom: 10px
 		&__button
-			font-size: 13px 
+			font-size: 13px
+		&-contacts
+			font-size: 13px
+
 @media (max-width: 768px)
 	.offer
 		background: #fff
 		&-block
 			width: 100%
-			padding-right: 0px	
-			
-		
-
+			padding-right: 0px
+		&-contacts
+			flex-direction: column
+			font-size: 14px
+			&__first
+				width: 100%
+			&__second
+				margin-top: 10px
+				margin-left: 0px
+				display: inline
+				width: 100%
