@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -95,6 +96,36 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.offer -->
+		<section class="section portfolio">
+			<div class="container">
+				<h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и
+					домах</h2>
+				<div class="slider">
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt="photo"></div>
+					<!-- /.slider-item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt="photo"></div>
+					<!-- /.slider-item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt="photo"></div>
+					<!-- /.slider-item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt="photo"></div>
+					<!-- /.slider-item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt="photo"></div>
+					<!-- /.slider-item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt="photo"></div>
+					<!-- /.slider-item -->
+				</div>
+				<div class="arrows portfolio__arrows">
+					<div class="arrows__left">
+						<img src="img/portfolio/left-arrow.png" alt="">
+					</div>
+					<div class="arrows__right">
+						<img src="img/portfolio/right-arrow.png" alt="">
+					</div>
+				</div>
+				<!-- /.slider -->
+				<!-- /.container -->
+		</section>
+		<!-- /.section portfolio -->
 	</main>
 
 	<div class="modal" id="modal">
@@ -105,7 +136,44 @@
 		<!-- /.modal-dialog -->
 	</div>
 	<!-- /.modal -->
-	<script src="js/main.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/slick.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('.slider').slick({
+
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				prevArrow: $('.arrows__left'),
+				nextArrow: $('.arrows__right'),
+				responsive: [
+
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 1200,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+				]
+			});
+		});
+
+
+
+	</script>
+
 </body>
 
 

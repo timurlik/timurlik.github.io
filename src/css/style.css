@@ -81,6 +81,10 @@ img {
   border-radius: 10px;
 }
 
+.section .arrows__left:hover, .section .arrows__right:hover {
+  cursor: pointer;
+}
+
 .navbar {
   padding: 8px 0px;
 }
@@ -280,6 +284,7 @@ img {
   width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -409,5 +414,32 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.portfolio {
+  background: #ffffff url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 68px;
+}
+
+.slider__image {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
