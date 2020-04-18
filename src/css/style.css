@@ -36,6 +36,7 @@ img {
 @media (max-width: 1200px) {
   .container {
     width: 760px;
+    margin: auto;
   }
 }
 
