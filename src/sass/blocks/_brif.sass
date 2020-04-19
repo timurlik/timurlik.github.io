@@ -89,18 +89,23 @@
 	.brif
 		background-image: url('../img/brif/brif-color-bg.png'), url('../img/brif/brif-bg.jpg')
 		background-position: top center, center bottom
-		background-size: 100% 50%, cover 
+		background-size: 100% 48%, cover 
 		background-repeat: repeat-x, no-repeat
 		&-block
 			flex-direction: column
 	.interview
+		&__title
+			max-width: 95%
 		&__subtitle
-			width: 50%
+			width: 60%
 			font-size: 14px
 			+bold
 .brif
 	padding-top: 50px
 	margin-top: 90px
+	padding-bottom: 30px
+	&__form
+		padding: 0px
 .form
 	&__title
 		padding-top: 20px
