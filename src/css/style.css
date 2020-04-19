@@ -759,6 +759,11 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .assurance__documents-explanation {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .assurance__picture-text {
     margin-top: 10px;
     margin-left: 10px;
@@ -921,8 +926,11 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .brif {
+    background-size: 50% 100%;
+  }
   .brif__form {
-    padding-left: 30px;
+    margin-left: 100px;
   }
   .interview {
     padding-right: 30px;
@@ -964,6 +972,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .interview {
+    padding-right: 0px;
   }
   .interview__title {
     max-width: 95%;
@@ -1073,10 +1084,16 @@ img {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .contacts {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding-left: 25px;
@@ -1093,12 +1110,6 @@ img {
   .map {
     width: 100%;
     position: relative;
-  }
-  .map-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=style.css.map */
