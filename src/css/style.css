@@ -78,7 +78,7 @@ img {
 }
 
 .section .input {
-  border: 2px #dddddd;
+  border: 1px solid #dddddd;
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
