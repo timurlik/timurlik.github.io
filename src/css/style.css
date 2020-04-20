@@ -989,29 +989,25 @@ img {
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
   }
-}
-
-.brif {
-  padding-top: 50px;
-  margin-top: 90px;
-  padding-bottom: 30px;
-}
-
-.brif__form {
-  padding: 0px;
-  margin-left: 0px;
-}
-
-.form__title {
-  padding-top: 20px;
-  margin-top: 90px;
-}
-
-.form__description {
-  display: inline-block;
-  width: 50%;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  .brif {
+    padding-top: 50px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+  }
+  .brif__form {
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .form__title {
+    padding-top: 20px;
+    margin-top: 90px;
+  }
+  .form__description {
+    display: inline-block;
+    width: 50%;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
 }
 
 .footer {
