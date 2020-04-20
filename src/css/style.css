@@ -165,7 +165,7 @@ img {
 
 .hero {
   padding: 50px 0px;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
 }
 
 .hero-block {
@@ -437,7 +437,7 @@ img {
 }
 
 .portfolio {
-  background: #ffffff url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
 }
 
@@ -631,12 +631,12 @@ img {
 .promise {
   height: 280px;
   background-color: #ffd200;
+  padding-top: 75px;
   max-width: 100%;
 }
 
 .promise__text {
   text-align: center;
-  padding-top: 99px;
   line-height: 40px;
   font-size: 32px;
   font-weight: 400;
@@ -645,8 +645,11 @@ img {
 }
 
 @media (max-width: 768px) {
+  .promise {
+    padding-top: 0px;
+  }
   .steps__title {
-    max-width: 80%;
+    max-width: 100%;
   }
   .steps__subtitle {
     margin-top: 28px;
@@ -659,12 +662,13 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 30px;
   }
   .steps__image-item:nth-child(even) {
     display: none;
   }
   .steps__image-block {
-    margin-top: 30px;
+    margin-top: 15px;
   }
   .promise__text {
     font-size: 20px;
@@ -995,6 +999,7 @@ img {
 
 .brif__form {
   padding: 0px;
+  margin-left: 0px;
 }
 
 .form__title {
@@ -1053,6 +1058,7 @@ img {
   font-size: 16px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  display: block;
 }
 
 .contacts-list__phone {

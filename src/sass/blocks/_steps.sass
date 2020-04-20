@@ -35,27 +35,30 @@
 .promise
 	height: 280px
 	background-color: $main-color
+	padding-top: 75px
 	max-width: 100%
 	&__text
 		text-align: center
-		padding-top: 99px
 		line-height: 40px
 		font-size: 32px
 		font-weight: 400
 		+bold
 @media (max-width:768px)
+	.promise
+		padding-top: 0px
 	.steps
 		&__title
-			max-width: 80%
+			max-width: 100%
 		&__subtitle
 			margin-top: 28px
 		&__image
 			flex-direction: column
 			align-items: center
+			margin-top: 30px
 			&-item:nth-child(even)
 				display: none
 			&-block
-				margin-top: 30px
+				margin-top: 15px
 	.promise
 		&__text
 			font-size: 20px
