@@ -23,8 +23,6 @@ img
 	padding: 18px 30px
 	border: none
 	+bold
-	&:hover
-		background-color: lighten($main-color, 10%)
 .section
 	padding: 90px 0px
 	&-title
@@ -51,3 +49,7 @@ img
 	margin-top: 100px
 .brif
 	margin-top: 225px
+@media (min-width: 1200px)
+	.button
+		&:hover
+			background-color: lighten($main-color, 10%)

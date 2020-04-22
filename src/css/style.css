@@ -56,10 +56,6 @@ img {
   font-weight: 700;
 }
 
-.button:hover {
-  background-color: #ffdb33;
-}
-
 .section {
   padding: 90px 0px;
 }
@@ -98,6 +94,12 @@ img {
 
 .brif {
   margin-top: 225px;
+}
+
+@media (min-width: 1200px) {
+  .button:hover {
+    background-color: #ffdb33;
+  }
 }
 
 .navbar {
@@ -650,6 +652,7 @@ img {
   }
   .steps__title {
     max-width: 100%;
+    margin-top: 0px;
   }
   .steps__subtitle {
     margin-top: 28px;
@@ -934,7 +937,7 @@ img {
     background-size: 50% 100%;
   }
   .brif__form {
-    margin-left: 100px;
+    padding-left: 50px;
   }
   .interview {
     padding-right: 30px;
@@ -1008,6 +1011,10 @@ img {
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
   }
+}
+
+.error {
+  display: inline-block;
 }
 
 .footer {
